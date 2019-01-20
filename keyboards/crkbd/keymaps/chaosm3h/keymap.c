@@ -72,11 +72,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_LOWER] = LAYOUT_kc( \
   //,-----------------------------------------.                ,-----------------------------------------.
-      XXXXX,  ASTR,     7,     8,     9,  PLUS,                  XXXXX,   GRV,  LBRC,  RBRC, XXXXX, XXXXX,\
+      XXXXX,  ASTR,     7,     8,     9,  MINS,                  XXXXX, XXXXX,  LCBR,  RCBR, XXXXX, XXXXX,\
   //|------+------+------+------+------+------|                |------+------+------+------+------+------|
-      XXXXX,   EQL,     4,     5,     6,  MINS,                   UNDS,  TILD,  LCBR,  RCBR,  BSLS, XXXXX,\
+      XXXXX,   EQL,     4,     5,     6,  PLUS,                  XXXXX,  UNDS,  LPRN,  RPRN,  BSLS, XXXXX,\
   //|------+------+------+------+------+------|                |------+------+------+------+------+------|
-      XXXXX,     0,     1,     2,     3,   ENT,                   QUOT,  DQUO, XXXXX, XXXXX, XXXXX, XXXXX,\
+       LSFT,     0,     1,     2,     3,   ENT,                  XXXXX, XXXXX,  LBRC,  RBRC, XXXXX,  RSFT,\
   //|------+------+------+------+------+------+------|  |------+------+------+------+------+------+------|
                                   GUIEI, LOWER,   SPC,      ENT, RAISE, ALTKN \
                               //`--------------------'  `--------------------'
@@ -84,11 +84,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_RAISE] = LAYOUT_kc( \
   //,-----------------------------------------.                ,-----------------------------------------.
-      XXXXX,  EXLM,    AT,  HASH,   DLR,  PERC,                   CIRC,  AMPR, XXXXX,  LPRN,  RPRN,   DEL,\
+      XXXXX,  EXLM,    AT,  HASH,   DLR,  PERC,                   CIRC,  AMPR,  QUOT,  DQUO,   GRV,   DEL,\
   //|------+------+------+------+------+------|                |------+------+------+------+------+------|
-      XXXXX, XXXXX, XXXXX, XXXXX, XXXXX, XXXXX,                   LEFT,  DOWN,    UP, RIGHT,  PIPE, XXXXX,\
+         F1,    F2,    F3,    F4,    F5,    F6,                   LEFT,  DOWN,    UP, RIGHT,  TILD,  PIPE,\
   //|------+------+------+------+------+------|                |------+------+------+------+------+------|
-         F1,    F2,    F3,    F4,    F5,    F6,                     F7,    F8,    F9,   F10,   F11,   F12,\
+       LSFT, XXXXX, XXXXX, XXXXX, XXXXX, XXXXX,                     F7,    F8,    F9,   F10,   F11,   F12,\
   //|------+------+------+------+------+------+------|  |------+------+------+------+------+------+------|
                                   GUIEI, LOWER,   SPC,      ENT, RAISE, ALTKN \
                               //`--------------------'  `--------------------'
