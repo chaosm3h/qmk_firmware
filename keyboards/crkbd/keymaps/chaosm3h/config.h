@@ -36,8 +36,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define TAPPING_TERM 100
 
 #undef RGBLED_NUM
-#define RGBLIGHT_ANIMATIONS
-#define RGBLED_NUM 27
+#define RGBLIGHT_EFFECT_STATIC_GRADIENT
+//#define RGBLIGHT_ANIMATIONS
+#define RGBLED_NUM 54
 #define RGBLIGHT_LIMIT_VAL 120
 #define RGBLIGHT_HUE_STEP 10
 #define RGBLIGHT_SAT_STEP 17
