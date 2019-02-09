@@ -72,9 +72,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_LOWER] = LAYOUT_kc( \
   //,-----------------------------------------.                ,-----------------------------------------.
-      XXXXX,  ASTR,     7,     8,     9,  MINS,                  XXXXX, XXXXX,  LCBR,  RCBR, XXXXX,   DEL,\
+      XXXXX,  PERC,     7,     8,     9,  MINS,                  XXXXX, XXXXX,  LCBR,  RCBR, XXXXX,   DEL,\
   //|------+------+------+------+------+------|                |------+------+------+------+------+------|
-      XXXXX,   EQL,     4,     5,     6,  PLUS,                  XXXXX,  UNDS,  LPRN,  RPRN,  BSLS, XXXXX,\
+        EQL,  ASTR,     4,     5,     6,  PLUS,                  XXXXX, XXXXX,  LPRN,  RPRN, XXXXX, XXXXX,\
   //|------+------+------+------+------+------|                |------+------+------+------+------+------|
        LSFT,     0,     1,     2,     3,   ENT,                  XXXXX, XXXXX,  LBRC,  RBRC, XXXXX,  RSFT,\
   //|------+------+------+------+------+------+------|  |------+------+------+------+------+------+------|
@@ -84,23 +84,23 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_RAISE] = LAYOUT_kc( \
   //,-----------------------------------------.                ,-----------------------------------------.
-      XXXXX,  EXLM,    AT,  HASH,   DLR,  PERC,                   CIRC,  AMPR,  QUOT,  DQUO,   GRV,   DEL,\
+       LSFT, XXXXX, XXXXX, XXXXX, XXXXX, XXXXX,                   GRV,   QUOT,  DQUO,  TILD,  UNDS,   DEL,\
   //|------+------+------+------+------+------|                |------+------+------+------+------+------|
-         F1,    F2,    F3,    F4,    F5,    F6,                   LEFT,  DOWN,    UP, RIGHT,  TILD,  PIPE,\
+      XXXXX, XXXXX, XXXXX, XXXXX, XXXXX, XXXXX,                   LEFT,  DOWN,    UP, RIGHT,  EXLM, XXXXX,\
   //|------+------+------+------+------+------|                |------+------+------+------+------+------|
-       LSFT, XXXXX, XXXXX, XXXXX, XXXXX, XXXXX,                     F7,    F8,    F9,   F10,   F11,   F12,\
+       LSFT, XXXXX, XXXXX, XXXXX, XXXXX, XXXXX,                   CIRC,   DLR,  AMPR,  PIPE,  BSLS,  RSFT,\
   //|------+------+------+------+------+------+------|  |------+------+------+------+------+------+------|
                                   GUIEI, LOWER,   SPC,      ENT, RAISE, ALTKN \
                               //`--------------------'  `--------------------'
   ),
-
+//RST, LRST, LTOG,  LHUI,  LSAI,  LVAI,LMOD,  LHUD,  LSAD,  LVAD,
   [_ADJUST] = LAYOUT_kc( \
   //,-----------------------------------------.                ,-----------------------------------------.
-        RST,  LRST, XXXXX, XXXXX, XXXXX, XXXXX,                  XXXXX, XXXXX, XXXXX, XXXXX, XXXXX, XXXXX,\
+        GRV,  EXLM,    AT,  HASH,   DLR,  PERC,                   CIRC,  AMPR,  ASTR,  LPRN,  RPRN,   DEL,\
   //|------+------+------+------+------+------|                |------+------+------+------+------+------|
-       LTOG,  LHUI,  LSAI,  LVAI, XXXXX, XXXXX,                  XXXXX, XXXXX, XXXXX, XXXXX, XXXXX, XXXXX,\
+         F1,    F2,    F3,    F4,    F5,    F6,                     F7,    F8,    F9,   F10,   F11,   F12,\
   //|------+------+------+------+------+------|                |------+------+------+------+------+------|
-       LMOD,  LHUD,  LSAD,  LVAD, XXXXX, XXXXX,                  XXXXX, XXXXX, XXXXX, XXXXX, XXXXX, XXXXX,\
+      XXXXX, XXXXX, XXXXX, XXXXX, XXXXX, XXXXX,                  XXXXX, XXXXX, XXXXX, XXXXX, XXXXX, XXXXX,\
   //|------+------+------+------+------+------+------|  |------+------+------+------+------+------+------|
                                   GUIEI, LOWER,   SPC,      ENT, RAISE, ALTKN \
                               //`--------------------'  `--------------------'
