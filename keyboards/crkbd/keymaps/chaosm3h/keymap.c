@@ -100,7 +100,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|------+------+------+------+------+------|                |------+------+------+------+------+------|
          F1,    F2,    F3,    F4,    F5,    F6,                     F7,    F8,    F9,   F10,   F11,   F12,\
   //|------+------+------+------+------+------|                |------+------+------+------+------+------|
-      XXXXX, XXXXX, XXXXX, XXXXX, XXXXX, XXXXX,                  XXXXX, XXXXX, XXXXX, XXXXX, XXXXX, XXXXX,\
+      XXXXX,  LMOD,  LHUD,  LSAD,  LVAD,   RST,                   LRST,  LTOG,  LHUI,  LSAI,  LVAI, XXXXX,\
   //|------+------+------+------+------+------+------|  |------+------+------+------+------+------+------|
                                   GUIEI, LOWER,   SPC,      ENT, RAISE, ALTKN \
                               //`--------------------'  `--------------------'
@@ -193,8 +193,8 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     case QWERTY:
       if (record->event.pressed) {
         persistent_default_layer_set(1UL<<_QWERTY);
-        rgblight_mode_noeeprom(RGBLIGHT_MODE_STATIC_GRADIENT + 3);
-        rgblight_sethsv_noeeprom_red();
+        //rgblight_mode_noeeprom(RGBLIGHT_MODE_STATIC_GRADIENT + 3);
+        //rgblight_sethsv_noeeprom_red();
       }
       return false;
       break;
@@ -202,12 +202,12 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
       if (record->event.pressed) {
         layer_on(_LOWER);
         update_tri_layer_RGB(_LOWER, _RAISE, _ADJUST);
-        rgblight_sethsv_noeeprom_green();
+        //rgblight_sethsv_noeeprom_green();
       } else {
         layer_off(_LOWER);
         update_tri_layer_RGB(_LOWER, _RAISE, _ADJUST);
-        rgblight_mode_noeeprom(RGBLIGHT_MODE_STATIC_GRADIENT + 3);
-        rgblight_sethsv_noeeprom_red();
+        //rgblight_mode_noeeprom(RGBLIGHT_MODE_STATIC_GRADIENT + 3);
+        //rgblight_sethsv_noeeprom_red();
       }
       return false;
       break;
@@ -215,23 +215,23 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
       if (record->event.pressed) {
         layer_on(_RAISE);
         update_tri_layer_RGB(_LOWER, _RAISE, _ADJUST);
-        rgblight_sethsv_noeeprom_blue();
+        //rgblight_sethsv_noeeprom_blue();
       } else {
         layer_off(_RAISE);
         update_tri_layer_RGB(_LOWER, _RAISE, _ADJUST);
-        rgblight_mode_noeeprom(RGBLIGHT_MODE_STATIC_GRADIENT + 3);
-        rgblight_sethsv_noeeprom_red();
+        //rgblight_mode_noeeprom(RGBLIGHT_MODE_STATIC_GRADIENT + 3);
+        //rgblight_sethsv_noeeprom_red();
       }
       return false;
       break;
     case ADJUST:
         if (record->event.pressed) {
           layer_on(_ADJUST);
-          rgblight_sethsv_noeeprom_white();
+          //rgblight_sethsv_noeeprom_white();
         } else {
           layer_off(_ADJUST);
-          rgblight_mode_noeeprom(RGBLIGHT_MODE_STATIC_GRADIENT + 3);
-          rgblight_sethsv_noeeprom_red();
+          //rgblight_mode_noeeprom(RGBLIGHT_MODE_STATIC_GRADIENT + 3);
+          //rgblight_sethsv_noeeprom_red();
         }
         return false;
         break;
