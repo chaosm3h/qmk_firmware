@@ -72,7 +72,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_LOWER] = LAYOUT_kc( \
   //,-----------------------------------------.                ,-----------------------------------------.
-      XXXXX,  PERC,     7,     8,     9,  MINS,                  XXXXX, XXXXX,  LCBR,  RCBR, XXXXX,   DEL,\
+        TAB,  PERC,     7,     8,     9,  MINS,                  XXXXX, XXXXX,  LCBR,  RCBR, XXXXX,   DEL,\
   //|------+------+------+------+------+------|                |------+------+------+------+------+------|
         EQL,  ASTR,     4,     5,     6,  PLUS,                  XXXXX, XXXXX,  LPRN,  RPRN, XXXXX, XXXXX,\
   //|------+------+------+------+------+------|                |------+------+------+------+------+------|
@@ -84,9 +84,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_RAISE] = LAYOUT_kc( \
   //,-----------------------------------------.                ,-----------------------------------------.
-       LSFT, XXXXX, XXXXX, XXXXX, XXXXX, XXXXX,                   GRV,   QUOT,  DQUO,  TILD,  UNDS,   DEL,\
+        TAB, XXXXX, XXXXX, XXXXX, XXXXX, XXXXX,                   GRV,   QUOT,  DQUO,  TILD,  UNDS,   DEL,\
   //|------+------+------+------+------+------|                |------+------+------+------+------+------|
-      XXXXX, XXXXX, XXXXX, XXXXX, XXXXX, XXXXX,                   LEFT,  DOWN,    UP, RIGHT,  EXLM, XXXXX,\
+      CTLTB, XXXXX, XXXXX, XXXXX, XXXXX, XXXXX,                   LEFT,  DOWN,    UP, RIGHT,  EXLM, XXXXX,\
   //|------+------+------+------+------+------|                |------+------+------+------+------+------|
        LSFT, XXXXX, XXXXX, XXXXX, XXXXX, XXXXX,                   CIRC,   DLR,  AMPR,  PIPE,  BSLS,  RSFT,\
   //|------+------+------+------+------+------+------|  |------+------+------+------+------+------+------|
@@ -98,9 +98,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //,-----------------------------------------.                ,-----------------------------------------.
         GRV,  EXLM,    AT,  HASH,   DLR,  PERC,                   CIRC,  AMPR,  ASTR,  LPRN,  RPRN,   DEL,\
   //|------+------+------+------+------+------|                |------+------+------+------+------+------|
-         F1,    F2,    F3,    F4,    F5,    F6,                     F7,    F8,    F9,   F10,   F11,   F12,\
+       LTOG,  LHUI,  LSAI,  LVAI, XXXXX,XXXXX,                      F1,    F2,    F3,    F4,    F5,    F6,\
   //|------+------+------+------+------+------|                |------+------+------+------+------+------|
-      XXXXX,  LMOD,  LHUD,  LSAD,  LVAD,   RST,                   LRST,  LTOG,  LHUI,  LSAI,  LVAI, XXXXX,\
+       LMOD,  LHUD,  LSAD,  LVAD,   RST,  LRST,                     F7,    F8,    F9,   F10,   F11,   F12,\
   //|------+------+------+------+------+------+------|  |------+------+------+------+------+------+------|
                                   GUIEI, LOWER,   SPC,      ENT, RAISE, ALTKN \
                               //`--------------------'  `--------------------'
