@@ -72,11 +72,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_LOWER] = LAYOUT_kc( \
   //,-----------------------------------------.                ,-----------------------------------------.
-        TAB,  PERC,     7,     8,     9,  MINS,                  XXXXX,  LCBR,  RCBR, XXXXX, XXXXX,   DEL,\
+        TAB,  PERC,     7,     8,     9,  MINS,                  XXXXX,  LBRC,  RBRC, XXXXX, XXXXX,   DEL,\
   //|------+------+------+------+------+------|                |------+------+------+------+------+------|
-        EQL,  ASTR,     4,     5,     6,  PLUS,                  XXXXX,  LPRN,  RPRN, XXXXX, XXXXX, XXXXX,\
+        EQL,  ASTR,     4,     5,     6,  PLUS,                  XXXXX,  LCBR,  RCBR, XXXXX, XXXXX, XXXXX,\
   //|------+------+------+------+------+------|                |------+------+------+------+------+------|
-       LTOG,     0,     1,     2,     3,   ENT,                  XXXXX,  LBRC,  RBRC, XXXXX, XXXXX,  RSFT,\
+       LTOG,     0,     1,     2,     3,   ENT,                  XXXXX, XXXXX, XXXXX, XXXXX, XXXXX,  RSFT,\
   //|------+------+------+------+------+------+------|  |------+------+------+------+------+------+------|
                                   GUIEI, LOWER,   SPC,      ENT, RAISE, ALTKN \
                               //`--------------------'  `--------------------'
@@ -84,11 +84,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_RAISE] = LAYOUT_kc( \
   //,-----------------------------------------.                ,-----------------------------------------.
-        TAB, XXXXX, XXXXX, XXXXX, XXXXX, XXXXX,                   GRV,   QUOT,  DQUO,  TILD,  EXLM,   DEL,\
+        TAB,  EXLM,    AT,  HASH,   DLR,  PERC,                   CIRC,  AMPR,  ASTR,  LPRN,  RPRN,   DEL,\
   //|------+------+------+------+------+------|                |------+------+------+------+------+------|
-      CTLTB, XXXXX, XXXXX, XXXXX, XXXXX, XXXXX,                   LEFT,  DOWN,    UP, RIGHT,  AMPR,    AT,\
+      CTLTB, XXXXX, XXXXX, XXXXX, XXXXX, XXXXX,                   LEFT,  DOWN,    UP, RIGHT,  QUOT,  DQUO,\
   //|------+------+------+------+------+------|                |------+------+------+------+------+------|
-       LSFT, XXXXX, XXXXX, XXXXX, XXXXX, XXXXX,                   CIRC,   DLR,  PIPE,  BSLS,  UNDS,  HASH,\
+       LSFT, XXXXX, XXXXX, XXXXX, XXXXX, XXXXX,                    GRV,  TILD,  PIPE,  BSLS,  UNDS,  RSFT,\
   //|------+------+------+------+------+------+------|  |------+------+------+------+------+------+------|
                                   GUIEI, LOWER,   SPC,      ENT, RAISE, ALTKN \
                                   //`--------------------'  `--------------------'
